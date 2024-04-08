@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begin
+    </title>
+    <link rel="stylesheet" href="testing.css">
+    <link rel="stylesheet" href="stp.css">
+    <h1>INTRODUCTION</h1>
+</head>
+<body>
+    <div class="align">
+        <p1>
+            This is where basic knowledge will be kept mayble on daily basis, Joshua has come to an agreement with himself that he will continue to exercise himself mentally with this, by this, i mean, coding. <br>Now lets list some of the languages i have been taught.
+        </p1>
+        <ul>They are;
+            <li>Python</li>
+            <li>Java</li>
+            <li>Html and Css</li>
+            <li>JavaScript</li>
+            <li>Sql</li>
+            <li>Plt</li>
+            <li>Office</li>
+        </ul>
+        <h2>SUBTOPICS</h2>
+        <h3>FORM AND INPUT.</h3>
+        <p1>
+            This is used for organisation of work, as to put it in the right presentable way. <br>It also accepts user's input, lets  get started to see.
+        </p1>
+        <div class="FORM1">
+            <form action="process.php">
+                <div class="FORM">
+                    <!--text-->
+                    <label for="name">NAME</label> <br>
+                    <input type="text" id="name" value="JOSH">
+                </div>
+                <div class="FORM">
+                    <!--email-->
+                    <label for="Email">EMAIL</label> <br>
+                    <input type="email" name="Email" id="email" placeholder="Enter Your Email">
+                </div>
+                <div class="FORM">
+                    <!--textarea-->
+                    <label for="message">MESSAGE</label> <br>
+                    <textarea name="message" id="message" cols="40" rows="5" placeholder="DROP YOUR FEEDBACK HERE..."></textarea>
+                </div>
+                <div class="FORM">
+                    <!--sex-->
+                    <label for="sex">SEX</label>
+                    <select name="sex" id="sex">
+                        <option value="MALE">MALE</option>
+                        <option value="FEMALE">FEMALE</option>
+                        <option value="PINEAPPLE" selected>PINEAPPLE</option>
+                    </select>
+                </div>
+                <div class="FORM">
+                    <!--age-->
+                    <label for="age">AGE</label>
+                    <input type="number"  name="age" id="age">
+                </div>
+                <div class="FORM">
+                    <!--date-->
+                    <label for="birthdate">BIRTHDATE</label>
+                    <input type="date" name="birthdate" id="birthdate">
+                </div>
+                <br>
+                <div class="FORM">
+                    <!--radio-->
+                    <label for="membership"> MEMBERSHIP</label> <br>
+                    <input type="radio" name="membership" id="membership" value="LOW TIER"> LOW TIER <br>
+                    <input type="radio" name="membership" id="membership" value="HIGH TIER"> HIGH TIER <br>
+                    <input type="radio" name="membership" id="membership" value="EXTREME TIER" checked> EXTREME TIER <br>
+                    <input type="radio" name="membership" id="membership" value="BEYONDER"> BEYONDER <br>
+                </div>
+                <div class="FORM">
+                    <!--chechbox-->
+                    <label for="HOBBIES">HOBBIES</label> <br>
+                    <input type="checkbox" name="HOBBIES" id="HOBBIES" value="SINGING"> SINGING <br>
+                    <input type="checkbox" name="HOBBIES" id="HOBBIES" value="DRAWING"> DRAWING <br>
+                    <input type="checkbox" name="HOBBIES" id="HOBBIES" value="DANCING" checked> DANCING <br>
+                    <input type="checkbox" name="HOBBIES" id="HOBBIES" value="WATCHING MOVIES"> WATCHING MOVIES <br>
+                </div>
+                <div class="FORM">
+                    <!--submit type-->
+                    <input type="submit" value="drop here">
+                    <!-- using button tag-->
+                    <button type="submit">submit </button>
+                    <!--reset-->
+                    <button type="reset">RESET</button>
+                </div>
+            </form>
+        </div>
+        <h3>STOPWATCH(JS)</h3>
+        <p1>Now lets add a spice, a timer to it</p1>
+        <div class="stopwatch">
+            <h1 id="displayTime">00:00:00</h1>
+            <div class="buttons">
+                <img src="PIC.VIDEO/arrow.png" width="50cm" onclick="watchStop()">
+                <img src="PIC.VIDEO/Goatku.png" width="80cm" onclick="watchStart()">
+                <img src="PIC.VIDEO/menu.png" width="50cm" onclick="watchreset()"></div>
+    
+        <script>
+    
+            let [hours,minutes,seconds] = [0,0,0];
+            let displayTime = document.getElementById("displayTime");
+            let timer = null;
+    
+            function stopwatch(){
+                seconds++;
+                if(seconds == 60){
+                    seconds = 0;
+                    minutes++;
+                    if(minutes == 60){
+                        minutes = 0;
+                        hours++;
+                    }
+                }
+    
+                let h = hours < 10 ? "0" + hours : hours;
+                let m = minutes < 10 ? "0" + minutes : minutes;
+                let s = seconds < 10 ? "0" + seconds : seconds;
+    
+                displayTime.innerHTML = h+":"+m+":"+s;
+            }
+    
+            function watchStart(){
+                if(timer!== null){
+                    clearInterval(timer)
+                }
+                timer = setInterval(stopwatch,1000);
+            }
+    
+            function watchStop(){
+                clearInterval(timer);
+            }
+            function watchreset(){
+                clearInterval(timer);
+                [hours,minutes,seconds] = [0,0,0];
+                displayTime.innerHTML = "00:00:00"
+            }
+        </script>
+    </div>
+</div>
+<div class="Format">
+    <h3>TEXT FORMATTING</h3>
+    <p1>Formatting elements were made to display special types/styles for texts.</p1>
+<ul style="justify-items: auto;"><b>THERE ARE:</b>
+<li><b>bold - (b)</b></li>
+<li><i>italize</i> - (i)</li>
+<li><strong>IMPOTANT TEXT</strong> - (strong)</li>
+<li><em>Emphasis Text</em> - (em)</li>
+<li><small>smaller text</small> - (small)</li>
+<li><del>deleted text</del> - (del)</li>
+<li><ins>inserted text</ins> - (ins)</li>
+<li><sub>subscript text</sub> - (sub)</li>
+<li><sup>superscript text</sup> - (sup)</li></ul>
+</div>
+</body>
+</html>

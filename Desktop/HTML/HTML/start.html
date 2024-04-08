@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form and input</title>
+    <link rel="stylesheet" href="START.css">
+    <h1>TESTING...</h1>
+</head>
+<body>
+    <div class="FORM1">
+        <form action="process.php">
+            <div class="FORM">
+                <!--text-->
+                <label for="name">NAME</label> <br>
+                <input type="text" id="name" value="JOSH">
+            </div>
+            <div class="FORM">
+                <!--email-->
+                <label for="Email">EMAIL</label> <br>
+                <input type="email" name="Email" id="email" placeholder="Enter Your Email">
+            </div>
+            <div class="FORM">
+                <!--textarea-->
+                <label for="message">MESSAGE</label> <br>
+                <textarea name="message" id="message" cols="40" rows="5" placeholder="DROP YOUR FEEDBACK HERE..."></textarea>
+            </div>
+            <div class="FORM">
+                <!--sex-->
+                <label for="sex">SEX</label>
+                <select name="sex" id="sex">
+                    <option value="MALE">MALE</option>
+                    <option value="FEMALE">FEMALE</option>
+                    <option value="PINEAPPLE" selected>PINEAPPLE</option>
+                </select>
+            </div>
+            <div class="FORM">
+                <!--age-->
+                <label for="age">AGE</label>
+                <input type="number"  name="age" id="age">
+            </div>
+            <div class="FORM">
+                <!--date-->
+                <label for="birthdate">BIRTHDATE</label>
+                <input type="date" name="birthdate" id="birthdate">
+            </div>
+            <br>
+            <div class="FORM">
+                <!--radio-->
+                <label for="membership"> MEMBERSHIP</label> <br>
+                <input type="radio" name="membership" id="membership" value="LOW TIER"> LOW TIER <br>
+                <input type="radio" name="membership" id="membership" value="HIGH TIER"> HIGH TIER <br>
+                <input type="radio" name="membership" id="membership" value="EXTREME TIER" checked> EXTREME TIER <br>
+                <input type="radio" name="membership" id="membership" value="BEYONDER"> BEYONDER <br>
+            </div>
+            <div class="FORM">
+                <!--chechbox-->
+                <label for="HOBBIES">HOBBIES</label> <br>
+                <input type="checkbox" name="HOBBIES" id="HOBBIES" value="SINGING"> SINGING <br>
+                <input type="checkbox" name="HOBBIES" id="HOBBIES" value="DRAWING"> DRAWING <br>
+                <input type="checkbox" name="HOBBIES" id="HOBBIES" value="DANCING" checked> DANCING <br>
+                <input type="checkbox" name="HOBBIES" id="HOBBIES" value="WATCHING MOVIES"> WATCHING MOVIES <br>
+            </div>
+            <div class="FORM">
+                <!--submit type-->
+                <input type="submit" value="drop here">
+                <!-- using button tag-->
+                <button type="submit">submit </button>
+                <!--reset-->
+                <button type="reset">RESET</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="welcome">
+        <h2 class="primary-heading">WELCOME</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iure quis quia placeat blanditiis perferendis repellat. Dolorum fugit odit aliquid sit possimus sed, perferendis quaerat officia fugiat molestiae nobis inventore veritatis qui natus laudantium ducimus quis tempore maiores? Nostrum, corrupti natus.</ p>
+        <br>
+    </div>
+    <div id="about">
+        <h2>ABOUT</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi rem eligendi ullam maxime voluptatem cupiditate laudantium odio molestiae, nihil tempore. Modi.</p>
+    </div>
+</body>
+</html>  

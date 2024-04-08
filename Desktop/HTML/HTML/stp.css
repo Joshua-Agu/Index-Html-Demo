@@ -1,0 +1,33 @@
+body {
+    background: royalblue;
+}
+.stopwatch{
+    width: 90%;
+    max-width: 600px;
+    background-image: url(PIC.VIDEO/pxfuel.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 40px 0;
+    color: #fff;
+    margin: 200px auto 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, o.2);
+    border-radius: 10%;
+}
+.stopwatch h1{
+    margin-top: 60px;
+    font-size: 64px;
+    font-weight: 300;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons{
+    margin: 0 50px;
+    cursor: pointer;
+}
+.buttons img:nth-child(2) {
+    width: 80px;
+}

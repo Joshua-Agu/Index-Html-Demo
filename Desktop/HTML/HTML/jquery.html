@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery-3.7.1.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            // Hide the paragraph initially (if desired)
+            //$("#myParagraph").hide;
+
+            //Hide the paragraph when the "hide" button is clicked.
+            $("#hide").click(function(){
+                 $("#myparagraph").hide();
+            });
+
+            //unhide the paragraph.
+            $("#unhide").click(function(){
+                $("#myparagraph").show();
+            });
+
+        })
+        $(document).ready(function(){
+            $("#p1").on({
+                mouseenter: function(){
+                    $(this).css("background-colour","grey");
+                },
+                mouseleave: function(){
+                    $(this).css("background-color","lightblue");
+                },
+                click: function(){
+                    $(this).css("background-color","yellow")
+                },
+                dblclick: function(){
+                    $(this).css("background-color","red")
+                }
+            });
+        });
+    </script>
+    <h1>JQUERY</h1>
+</body>
+
+    <title>Document</title>
+</head>
+<body>
+    <p1 id="myparagraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias unde incidunt, impedit non voluptates quas odit nulla error sunt tempore modi quaerat nemo libero eaque delectus quibusdam? Ipsum aperiam architecto consequatur inventore distinctio? Rem animi excepturi, numquam veritatis laborum similique cumque molestiae nemo quo labore ipsam nostrum quia maxime non.
+    </p1>
+    <button id="hide">HIDE</button>
+    <button id="unhide">UNHIDE</button>
+    <p2 id="p1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </p1>
+    <style>
+        p1,p2{
+            font-size: x-large;
+            font-weight: 500;
+            font-family: 'Courier New', Courier, monospace;
+            cursor:cell;
+        }
+        button{
+            border-radius: 30%;
+            background-color: aquamarine;
+            cursor: pointer;
+            width: 100pt;
+            font-weight: 300;
+            font-size: larger;
+            
+        }
+        :hover button{
+            background-color: blue;
+            color: burlywood;
+        }
+        body{
+            background-color: darkkhaki;
+            border-radius: 2pt;
+            border: black;
+            border-color: aquamarine;
+        }
+        h1{
+            text-align: center;
+            font-size: 50pt;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-decoration: underline;
+        }
+    </style>
+</html>
